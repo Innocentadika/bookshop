@@ -1,0 +1,116 @@
+.startup .startup2{
+    background-image:  url('../../assets/backgroundlock.png');
+    background-size: cover;
+  }
+.startup .top{
+    display: flex;
+}
+
+.startup .grid5{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    color: rgb(4, 0, 0);
+    width: auto;
+
+  }
+/* text decor inside each container */
+.startup label{
+    color: rgb(167, 166, 166);
+    font-size: small;
+    
+
+  }
+  .startup .mtop{
+    padding: 20px;
+  }
+ .startup h4{
+    font-weight: 700;
+    margin-top: 5px;
+  }
+
+  .startup .box{
+    
+    border-radius: 2.8px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0.2rem;
+    padding: 2px;
+    height: 26rem;
+    background: rgb(111, 141, 145);
+    flex-wrap: wrap;
+}
+.startup .box:hover{
+    box-shadow: 0 0 20px 0 rgb(227, 224, 224);
+}
+.startup .grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.startup .grow:hover { 
+    transform: scale(1.1); 
+    }
+
+    .btn{
+        display: inline-block;
+        background-color: cornsilk;
+        padding: .5rem 2rem;
+        border: 1px solid rgb(6, 63, 98);
+        font-weight: 500;
+        transition:var(--transition) ;
+      }
+      
+      .btn:hover{
+        background: black;
+        color: rgb(22, 233, 22);
+        border-color: green;
+      
+      }
+      .btn-primary{
+        background: transparent;
+        color: black;
+      }
+
+
+
+@media (min-width: 992px) {
+  .startup .grid5 {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+  .startup label{
+    font-size: 0.8rem;
+    }
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .startup .grid5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Styles for phones */
+@media (max-width: 767px) {
+  .startup .grid5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px){
+    
+    .startup .grid5{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .startup label{
+        font-size: small;
+    }
+    .startup h4{
+        font-size: small;
+        width: 100%;
+    }
+    
+}
+    

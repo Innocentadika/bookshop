@@ -1,0 +1,58 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #f5f5f3;
+
+  }
+
+  .rotate:hover {
+    transform: rotate(0deg);
+    animation: rotateIn 1s ease-in-out forwards;
+    color: blue;
+  }
+  
+  @keyframes rotateIn {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+  /* Styles for laptops and desktops */
+  @media (min-width: 992px) {
+    .footer {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+   
+  }
+  
+  /* Styles for tablets */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Styles for phones */
+  @media (max-width: 767px) {
+    .footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+
+
+@media screen and (max-width: 500px){
+    
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    
+}
